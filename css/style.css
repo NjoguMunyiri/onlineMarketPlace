@@ -9,7 +9,7 @@
 }
 #btn{
   margin-left: 45%;
-  border-color: #90EE90;
+  border-color: #8B0000;
   background-color: transparent;
 }
 .jumbotron{
@@ -17,4 +17,8 @@
 }
 #row3{
   background-image: url(../assets/bg.jpg);
+}
+.jumbotron{
+  background-color:transparent;
+  background-attachment: fixed;
 }
