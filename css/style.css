@@ -21,5 +21,10 @@
 }
 .jumbotron{
   background-color:transparent;
-
+  text-align: center;
+}
+.jumbotron p{
+  background-color: #ffffff;
+  width: 50%;
+  margin-left: 25%;
 }
