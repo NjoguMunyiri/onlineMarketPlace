@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <title>Online Market Place</title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <!--Bootstrap CDN-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <style media="screen">
       #name, #address, #submit{
         padding: 10px;
@@ -23,19 +25,29 @@
       </div>
       <div class="input-group" id="address">
         <span class="input-group-addon">address</span>
-        <input type="text" name="" value="" class="form-control" placeholder="physical address" id="fname">
+        <input type="text" name="" value="" class="form-control" placeholder="physical address" id="inputadress">
       </div>
       <div class="input-group" id="submit">
         <input type="submit" name="" value="submit" id="btn">
       </div>
     </form>
+    <hr>
+    <div class="jumbotron">
+      <p id="display"></p>
+    </div>
     <script type="text/javascript">
 
       $(document).ready(function() {
 
         $("#btn").click(function(){
-          alert("Thank You "+$("#inputname").val());
-          alert(n);
+        var t = $("#inputname").val();
+        var x = $("#inputadress").val();
+
+        var txt = "Thank You -"+t+"- from - "+x+" - for your turntable purchase, be sure to come back for the best discount on turntables and records";
+        document.getElementById('display') = "lkkkk";
+      
+        //alert(txt);
+
         });
 
 
