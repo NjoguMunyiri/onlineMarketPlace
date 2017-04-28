@@ -17,8 +17,9 @@
 }
 #row3{
   background-image: url(../assets/bg.jpg);
+  background-attachment: fixed;
 }
 .jumbotron{
   background-color:transparent;
-  background-attachment: fixed;
+
 }
