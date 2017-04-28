@@ -16,41 +16,43 @@
     <link rel="stylesheet" href="css\style.css">
   </head>
   <body>
-    <img src="assets\plx1000gold.jpg" alt="" class="img-fluid">
-    <form class="" action="index.html" method="post">
-      <div class="input-group" id="name">
-        <span class="input-group-addon">Full Name</span>
-        <input type="text"  name="" value="" class="form-control" placeholder="First Name  & Second Name" id="inputname">
+    <div class="container-fluid">
+      <img src="assets\plx1000gold.jpg" alt="" class="img-fluid">
+      <form class="" action="index.html" method="post">
+        <div class="input-group" id="name">
+          <span class="input-group-addon">Full Name</span>
+          <input type="text"  name="" value="" class="form-control" placeholder="First Name  & Second Name" id="inputname">
+        </div>
+        <div class="input-group" id="address">
+          <span class="input-group-addon">address</span>
+          <input type="text" name="" value="" class="form-control" placeholder="physical address" id="inputadress">
+        </div>
+        <div class="input-group" id="submit">
+          <input type="submit" name="" value="submit" id="btn">
+        </div>
+      </form>
+      <hr>
+      <div class="jumbotron">
+        <p id="display"></p>
       </div>
-      <div class="input-group" id="address">
-        <span class="input-group-addon">address</span>
-        <input type="text" name="" value="" class="form-control" placeholder="physical address" id="inputadress">
-      </div>
-      <div class="input-group" id="submit">
-        <input type="submit" name="" value="submit" id="btn">
-      </div>
-    </form>
-    <hr>
-    <div class="jumbotron">
-      <p id="display"></p>
-    </div>
-    <script type="text/javascript">
+      <script type="text/javascript">
 
-      $(document).ready(function() {
+        $(document).ready(function() {
 
-        $("#btn").click(function(){
-        var t = $("#inputname").val();
-        var x = $("#inputadress").val();
+          $("#btn").click(function(){
+          var t = $("#inputname").val();
+          var x = $("#inputadress").val();
 
-        var txt = "Thank You -"+t+"- from - "+x+" - for your turntable purchase, be sure to come back for the best discount on turntables and records";
-        document.getElementById('display') = "lkkkk";
+          var txt = "Thank You -"+t+"- from - "+x+" - for your turntable purchase, be sure to come back for the best discount on turntables and records";
+          document.getElementById('display') = "lkkkk";
 
-        //alert(txt);
+          //alert(txt);
+
+          });
+
 
         });
-
-
-      });
-    </script>
+      </script>
+    </div>
   </body>
 </html>
