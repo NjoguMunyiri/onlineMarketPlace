@@ -1,6 +1,9 @@
 #name, #address, #submit{
   padding: 10px;
 }
-img{
+#plx{
   float: right;
+}
+.d-flex{
+  width: 100%;
 }
