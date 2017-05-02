@@ -70,18 +70,22 @@
     <script type="text/javascript">
 
       $(document).ready(function() {
+        $("form").submit(function(event) {
+            event.preventDefault();
 
-        $("#btn").click(function(){
-        var t = $("#inputname").val();
-        var x = $("#inputadress").val();
+            $("#btn").click(function(){
+            var t = $("#inputname").val();
+            var x = $("#inputadress").val();
 
-        var txt = "Thank You -"+t+"- from - "+x+" - for your record purchase, be sure to come back for the best discount on turntables and records";
-        document.getElementById("display").innerHTML = "lkkkk";
+            var txt = "Thank You -"+t+"- from - "+x+" - for your record purchase, be sure to come back for the best discount on turntables and records";
+            $("#display").text(txt);
 
-        alert(txt);
+            //alert(txt);
 
-        });
+            });
 
+
+        })
 
       });
     </script>
